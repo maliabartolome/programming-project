@@ -9,7 +9,76 @@
     <title>Programming Language Suggester</title>
   </head>
   <body>
-    <h1>SUP</h1>
-    
+    <div class="container">
+      <h1>What's your next language?</h1>
+        <p>We're here to help you determine what the best language is for you to learn. Fill out this survey to find your next language.</p>
+      <div id="blanks">
+        <form>
+          <div class="form-group name">
+            <label class="control-label" for="inputName1">Enter your name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group education-level">
+            <label for="music">Education Level</label>
+              <select class="form-control" id="education">
+                <option></option>
+                <option>High School</option>
+                <option>Some College</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+                <option>Certification</option>
+                <option>Other</option>
+              </select>
+          </div>
+          <div class="form-group language-count">
+            <label for="languages">How many languages do currently you know?</label>
+              <div class="radio" id="languages">
+                <label>
+                  <input type="radio" name="languages" value="One" checked>
+                  One
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="languages" value="Two">
+                  Two
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="languages" value="Three">
+                  Three
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="languages" value="Four+">
+                  Four+
+                </label>
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="born">Date of birth:</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+          <div class="form-group">
+            <label for="color">Your favorite color</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+        </form>
+      </div>
+      <div id="result-leo">
+        <h1>You matched with Leonardo DiCaprio!</h1>
+        <img src="img/leonardo.jpg" alt="A gorgeous picture of Leo DiCaprio" width="400">
+      </div>
+      <div id="result-harry">
+        <h1>You matched with Prince Harry!</h1>
+        <img src="img/harry.jpg" alt="A gorgeous picture of Prince Harry" width="400">
+      </div>
+      <div id="result-david">
+        <h1>You matched with David Beckham!</h1>
+        <img src="img/david.jpg" alt="A gorgeous picture of David Beckham" width="400">
+      </div>
+    </div>
   </body>
 </html>

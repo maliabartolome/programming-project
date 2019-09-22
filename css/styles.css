@@ -1,0 +1,7 @@
+#result-leo, #result-harry, #result-david {
+  display: none;
+}
+
+.btn {
+  display: block;
+}
