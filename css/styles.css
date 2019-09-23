@@ -14,10 +14,15 @@
   width: 50%;
 }
 
-.container-results {
+.modal-body {
   text-align: center;
+  color: white;
+  background-color: rgba(40, 100, 80, 0.5);
 }
 
+.modal-title {
+  color: rgba(40, 100, 80, 0.5);
+}
 .container {
   background-color: rgba(40, 100, 80, 0.5);
 }
@@ -25,9 +30,9 @@
 h1 {
   text-align: center;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 p, label {
-  color: black;
+  color: white;
 }
