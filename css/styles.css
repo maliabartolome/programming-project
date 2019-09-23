@@ -4,6 +4,7 @@
 
 .btn {
   display: block;
+  color: white;
 }
 
 .center {
@@ -15,4 +16,18 @@
 
 .container-results {
   text-align: center;
+}
+
+.container {
+  background-color: rgba(40, 100, 80, 0.5);
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+p, label {
+  color: black;
 }
