@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <title>Programming Language Suggester</title>
   </head>
@@ -32,33 +34,33 @@
           </div>
           <div class="form-group language-count">
             <label for="languages">How many languages do currently you know?</label>
-            <div class="radio" id="languages">
+            <div class="radio">
               <label>
-                <input type="radio" name="languages" value="none" checked>
+                <input type="radio" name="languages" value="none" checked id="languages">
                 None
               </label>
             </div>
-              <div class="radio" id="languages">
+              <div class="radio">
                 <label>
-                  <input type="radio" name="languages" value="One">
+                  <input type="radio" name="languages" value="One" id="languages">
                   One
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="languages" value="Two">
+                  <input type="radio" name="languages" value="Two" id="languages">
                   Two
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="languages" value="Three">
+                  <input type="radio" name="languages" value="Three" id="languages">
                   Three
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="languages" value="Four+">
+                  <input type="radio" name="languages" value="Four+" id="languages">
                   Four+
                 </label>
               </div>
@@ -94,23 +96,42 @@
                   Maybe
               </div>
           </div>
-          <button type="submit" class="btn">Click to here if you're ready to learn!</button>
+          <button type="submit" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Click to here if you're ready to learn!</button>
         </form>
       </div>
-      <div id="result-js">
-        <h1>You should learn JavaScript!</h1>
-        <img src="img/js.jpg" alt="A yellow background with an icon of a computer with Java Script text" width="400" class="center">
-          <p>JavaScript Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div id="result-ruby">
-        <h1>You should learn Ruby!</h1>
-        <img src="img/ruby.jpg" alt="A red background with an icon of a computer with Ruby text" width="400" class="center">
-          <p>Ruby Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div id="result-python">
-        <h1>You should learn Python!</h1>
-        <img src="img/python.jpg" alt="A blue background with an icon of a computer with Python text" width="400" class="center">
-        <p>Python Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="container-results">
+        <div class="modal" tabindex="-1" role="dialog" id="exampleModalCenter">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Your results</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div id="result-js">
+                  <h1>You should learn JavaScript!</h1>
+                  <img src="img/js.jpg" alt="A yellow background with an icon of a computer with Java Script text" width="400" class="center">
+                    <p>JavaScript Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="result-ruby">
+                  <h1>You should learn Ruby!</h1>
+                  <img src="img/ruby.jpg" alt="A red background with an icon of a computer with Ruby text" width="400" class="center">
+                    <p>Ruby Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="result-python">
+                  <h1>You should learn Python!</h1>
+                  <img src="img/python.jpg" alt="A blue background with an icon of a computer with Python text" width="400" class="center">
+                  <p>Python Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
