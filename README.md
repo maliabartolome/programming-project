@@ -1,15 +1,14 @@
-# _Independent Project_
+# _Programming Project_
 
-#### _Biography style information about the author of this page and the interest of pets, plants, and people., Dated: August 23, 2019_
+#### _A survey that will provide suggestions based on user inputs to determine what language the user should learn, Dated: September 22, 2019_
 
 #### By _**Malia Bartolome**_
 
 ## Setup/Installation Requirements
-* _Create a directory named Independent-Project_
+* _Create a directory named Programming-Project_
 * _Create sub directories within the root directory named img, html, and css_
 * _Create a file named [index.html](https://maliabartolome.github.io/programming-project/index.html) under root directory_
 * _Create styles.css under the css sub directory_
-* _Create the about-me.html and blog.html under the html sub directory_
 * _Git Init_
 * _Git add ._
 * _Git commit -m"changed"_
@@ -27,6 +26,8 @@ _Contact Malia Bartolome for more information._
 ## Technologies Used
 * _html_
 * _css_
+* _java script_
+* _jquery_
 
 ## License
 * Copyright (c) 2019 **_MIT_**

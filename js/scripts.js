@@ -12,9 +12,13 @@ $(document).ready(function() {
       var test = $(id).text(userInput).val();
         console.log(education);
 
-      if (education) {
+      if (education && (awesome == "Super awesome")) {
         $('#result-js').show();
-      } else if (ready === '') {
+      } else if (ready) {
+        $('#result-ruby').show();
+      } else if (education (languages == "One")) {
+        $('#result-js').show();
+      } else if (awesome) {
         $('#result-ruby').show();
       } else {
         $('#result-python').show();
