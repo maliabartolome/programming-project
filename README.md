@@ -7,7 +7,7 @@
 ## Setup/Installation Requirements
 * _Create a directory named Programming-Project_
 * _Create sub directories within the root directory named img, html, and css_
-* _Create a file named [index.html](https://maliabartolome.github.io/programming-project/index.html) under root directory_
+* _Create a file named [index.html](https://github.com/maliabartolome/programming-project.git) under root directory_
 * _Download/Clone repository through GitHub_
 * _Start coding_
 * _Commit and push_
