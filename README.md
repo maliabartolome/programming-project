@@ -8,15 +8,9 @@
 * _Create a directory named Programming-Project_
 * _Create sub directories within the root directory named img, html, and css_
 * _Create a file named [index.html](https://maliabartolome.github.io/programming-project/index.html) under root directory_
-* _Create styles.css under the css sub directory_
-* _Git Init_
-* _Git add ._
-* _Git commit -m"changed"_
-* _Git push origin master_
-* _Create css commands_
-* _Build out the content in the html_
-* _Repeat pushing process_
-* _Upload to branch_
+* _Download/Clone repository through GitHub_
+* _Start coding_
+* _Commit and push_
 
 ## No known bugs at this time
 
